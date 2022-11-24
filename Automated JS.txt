@@ -1,0 +1,10 @@
+  const [time, settime]=useState(10);
+  const router = useRouter()
+  const interval = setInterval(() => {
+      settime(time - 1)
+  },500)
+
+  if(time == 1){
+    clearInterval(interval);
+    router.push('/about')
+  }
