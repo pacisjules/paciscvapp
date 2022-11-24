@@ -43,10 +43,10 @@ const Startup = () => {
           </div>
           <div className={style.profileSocial}>
           <ul>
-            <li><Link href={"https://www.instagram.com/shamigo250/"}><RiInstagramFill/></Link></li>
-            <li><Link href={"https://wa.me/250788224590"}><RiWhatsappFill/></Link></li>
-            <li><Link href={"https://www.linkedin.com/in/pacis-jules-ishimwe-b54578117?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTnTt6hwJRt2BWUgvdSicVQ%3D%3D"}><RiLinkedinFill/></Link></li>
-            <li><Link href={"https://github.com/pacisjules"}><RiGithubFill/></Link></li>
+            <li><Link href={"https://www.instagram.com/shamigo250/"} target="_blank"><RiInstagramFill/></Link></li>
+            <li><Link href={"https://wa.me/250788224590"} target="_blank"><RiWhatsappFill/></Link></li>
+            <li><Link href={"https://www.linkedin.com/in/pacis-jules-ishimwe-b54578117?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTnTt6hwJRt2BWUgvdSicVQ%3D%3D"} target="_blank"><RiLinkedinFill/></Link></li>
+            <li><Link href={"https://github.com/pacisjules"} target="_blank"><RiGithubFill/></Link></li>
           </ul>
           </div>
         </div>
