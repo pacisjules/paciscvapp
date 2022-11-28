@@ -30,7 +30,8 @@ const about = () => {
                 <title>My About page</title>
                 <meta name='keywords' content='web pro' />
             </Head>
-            <div className={style.Maintainer} style={{ width: '90%', marginTop:"-10px" }}>
+
+            <div className={style.Maintainer} style={{ width: '90%', marginTop: "-10px" }}>
                 <div className={style.M_right}>
                     <div className={style.My_infos} style={{ width: '75%' }}>
                         <h1 className='text-gradient bg-gradient-to-bl from-blue-900 via-blue-900 to-blue-500'>
@@ -47,7 +48,7 @@ const about = () => {
                                 }}
                             />
                         </h1>
-                        <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder'}}>As</span> Software engineer <span style={{ fontSize: "25px" }}>✨</span></h2>
+                        <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder' }}>As</span> Software engineer <span style={{ fontSize: "25px" }}>✨</span></h2>
                         <br /><p>Hi there! I am Pacis Jules ISHIMWE,<br />
                             I am professional in programming with over 4 years of experience. I can solve Android, IOS, Webs, Desktop Application etc. Also I have experience in the composing Video, UI design, editing, Apps and Web coding. I have strong skills in
                             Each step of creating project from conceptual idea to final mix bid ideas.
@@ -56,59 +57,59 @@ const about = () => {
                         <p>I have always made every effort to ensure that the client was satisfied with the execution of
                             works in the shortest possible time.</p>
                     </div>
-<br/>
+                    <br />
                     <div className={style.skills}>
                         <h1 className="text-gradient bg-gradient-to-bl from-blue-900 via-blue-900 to-blue-500">skills</h1>
-                        
+
                         <div className={style.in_skills}>
-                        <section>
-                            <p>Javascript</p>
-                        </section>
+                            <section>
+                                <p>Javascript</p>
+                            </section>
 
-                        <section>
-                            <p>Java</p>
-                        </section>
+                            <section>
+                                <p>Java</p>
+                            </section>
 
-                        <section>
-                            <p>Python</p>
-                        </section>
+                            <section>
+                                <p>Python</p>
+                            </section>
 
 
-                        <section>
-                            <p>C#</p>
-                        </section>
+                            <section>
+                                <p>C#</p>
+                            </section>
 
-                        <section>
-                            <p>React Js</p>
-                        </section>
-                        
-                        <section>
-                            <p>Next Js</p>
-                        </section>
-                        <section>
-                            <p>FastApi</p>
-                        </section>
+                            <section>
+                                <p>React Js</p>
+                            </section>
 
-                        <section>
-                            <p>Figma</p>
-                        </section>
-                        <section>
-                            <p>React native</p>
-                        </section>
+                            <section>
+                                <p>Next Js</p>
+                            </section>
+                            <section>
+                                <p>FastApi</p>
+                            </section>
 
-                        <section>
-                            <p>Illustrator</p>
-                        </section>
+                            <section>
+                                <p>Figma</p>
+                            </section>
+                            <section>
+                                <p>React native</p>
+                            </section>
 
-                        <section>
-                            <p>HTML5</p>
-                        </section>
+                            <section>
+                                <p>Illustrator</p>
+                            </section>
 
-                        <section>
-                            <p>Databases</p>
-                        </section>
-                        
-                        
+                            <section>
+                                <p>HTML5</p>
+                            </section>
+
+                            <section>
+                                <p>Databases</p>
+                            </section>
+
+
                         </div>
 
                     </div>
