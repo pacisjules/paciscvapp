@@ -1,0 +1,14 @@
+
+/* export const myinstagram = async ()=>{
+  const url =`https://graph.instagram.com/me/media?fields=id,media_type,media_url,username,timestamp&access_token=IGQVJXOU5QYUlacXRmUkZA4aW5uRmZANd1FSMHMzaGZAYN1p5Wk9ZAR196U2h5cHdNbEpSYzdlZAHhBR0ZAkM3BPNXJkYTVuNVhIbjhwVzcwMkRublN3MHNqaXlOMDBUUFBHUjhkSkRKSFpYckFHTlpfMThTNwZDZD`
+  const fetch_url = await fetch(url);
+  const getter = await fetch_url.json();
+
+
+  return {
+    props:{
+      getter,
+    },
+  };
+}; */
+
