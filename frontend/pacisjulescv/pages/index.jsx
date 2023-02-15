@@ -9,12 +9,6 @@ const Home = () => {
   const [time, settime] = useState(11);
 
 
-  // const addText =()=>{
-  //   setText(text + txt.charAt(count))
-  //   setCount(count + 1)
-  // }
-
-
   const interval = setInterval(() => {
     settime(time - 1)
   }, 1000)

@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
+
+
   if(router.pathname === '/') {
     return <Component {...pageProps} />;
   }else{
@@ -14,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   </Layout>
   )
   }
+
 }
 
 export default MyApp
