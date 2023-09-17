@@ -1250,7 +1250,7 @@
   }
 
   .Maintainer .M_right .My_infosDetails section {
-    text-align: justify;
+    text-align: left;
     margin-top: 20px;
     
   }
@@ -1262,7 +1262,7 @@
   
   .Maintainer .M_right .My_infosDetails section p {
     color: #214277;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     width: 100%;
   }
