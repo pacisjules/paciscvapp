@@ -1236,8 +1236,8 @@
 
 
   .Maintainer .M_right .My_infosDetails {
-    flex: 1;
     display: flex;
+    flex-direction: column;
     font-family: 'Quicksand', sans-serif;
     justify-content: space-between;
     width: 100%;
@@ -1245,6 +1245,24 @@
     color: #172C4D;
     padding-left: 10px;
     margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .Maintainer .M_right .My_infosDetails section {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  
+  .Maintainer .M_right .My_infosDetails section h2 {
+    font-weight: bold;
+    color: #0071db;
+  }
+  
+  .Maintainer .M_right .My_infosDetails section p {
+    font-weight: 500;
+    color: #214277;
+    font-size: 13px;
   }
 
 

@@ -97,7 +97,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li onClick={()=>SetShow(false)}>
-              <Link href={"/projects"} data-tip="My projects &#128642;">
+              <Link href={"/myprojects"} data-tip="My projects &#128642;">
                 <SiTorproject /> <p>My projects</p>
               </Link>
             </li>
