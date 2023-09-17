@@ -4,7 +4,7 @@ import style from './App.module.css';
 import {MdSkipNext,MdSkipPrevious} from 'react-icons/md'
 import danne  from "../components/danne";
 import Link from 'next/link'
-
+import Image from 'next/image';
 const projects = () => {
   const[currentId, setCurrentID] = useState(1);
 
@@ -13,7 +13,7 @@ const projects = () => {
   const [type, settype] = useState('Javascript');
   const [gitlink, setgitlink] = useState('https://github.com/pacisjules/reactjs_togglecss');
   const [link, setlink] = useState('https://loquacious-travesseiro-68f5c6.netlify.app/');
-  const [photo, setPhoto]= useState('https://user-images.githubusercontent.com/51479761/177051259-b9091d12-8bc6-40de-8217-274de9657569.PNG');
+  const [photo, setPhoto]= useState('');
   
 
   const see = ()=>{
@@ -87,7 +87,7 @@ const projects = () => {
 
           <div className={style.middle}>
           <div className={style.image}>
-            <img src={photo} alt="" />
+            <Image width={100} height={100} src={photo} alt="alt" />
           </div>
           <div className={style.infos}>
             <div className={style.description}>

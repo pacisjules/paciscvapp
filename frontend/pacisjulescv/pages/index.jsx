@@ -86,6 +86,7 @@ const Home = () => {
         </div>
 
       </div>
+
       <div className={classes.shape1} />
       <div className={classes.shape2} />
       <div className={classes.shape3} />

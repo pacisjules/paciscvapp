@@ -1,15 +1,6 @@
 const danne = [
     {
         id:1,
-        name:"React Js Light switch",
-        description:"This is the dark mode before click the toggle css button",
-        type:"Javascript",
-        image:"https://user-images.githubusercontent.com/51479761/177051259-b9091d12-8bc6-40de-8217-274de9657569.PNG",
-        url:"https://loquacious-travesseiro-68f5c6.netlify.app/",
-        github:"https://github.com/pacisjules/reactjs_togglecss",
-    },
-    {
-        id:2,
         name:"Best Radios and Tvs Streaming online App",
         description:"Project will help you to stream radios and tvs online. Don't be stress while in Job use this app and some time you need to watch some Tvs without Antenna use our streaming",
         type:"Radio",
@@ -18,7 +9,7 @@ const danne = [
         github:"https://github.com/pacisjules/manstreamer_reactjs",
     },
     {
-        id:3,
+        id:2,
         name:"Alarm react js system",
         description:"The best overall security system : Vivint. Best overall. Vivint security",
         type:"Alarm",

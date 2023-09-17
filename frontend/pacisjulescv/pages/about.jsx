@@ -31,9 +31,9 @@ const about = () => {
                 <meta name='keywords' content='web pro' />
             </Head>
 
-            <div className={style.Maintainer} style={{ width: '90%', marginTop: "-10px" }}>
+            <div className={style.Maintainer}>
                 <div className={style.M_right}>
-                    <div className={style.My_infos} style={{ width: '75%' }}>
+                    <div className={style.My_infos} >
                         <h1 className='text-gradient bg-gradient-to-bl from-blue-900 via-blue-900 to-blue-500'>
                             <Typewriter
                                 onInit={(typewriter) => {
