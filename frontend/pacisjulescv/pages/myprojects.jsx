@@ -57,51 +57,31 @@ const myprojects = () => {
                         
                         <div className={style.in_skills}>
                             <section>
-                                <p>Javascript</p>
+                                <p>HR System management at Newlife ministries.</p>
                             </section>
 
                             <section>
-                                <p>Java</p>
+                                <p>Selleasep POS Application at Shamigo.</p>
                             </section>
 
                             <section>
-                                <p>Python</p>
+                                <p>Ilead Web and App Attendance System.</p>
                             </section>
 
 
                             <section>
-                                <p>C#</p>
+                                <p>HashMe App</p>
                             </section>
 
                             <section>
-                                <p>React Js</p>
+                                <p>WasMe Chat App</p>
                             </section>
 
                             <section>
-                                <p>Next Js</p>
-                            </section>
-                            <section>
-                                <p>FastApi</p>
+                                <p>And more than....</p>
                             </section>
 
-                            <section>
-                                <p>Figma</p>
-                            </section>
-                            <section>
-                                <p>React native</p>
-                            </section>
-
-                            <section>
-                                <p>Illustrator</p>
-                            </section>
-
-                            <section>
-                                <p>HTML5</p>
-                            </section>
-
-                            <section>
-                                <p>Databases</p>
-                            </section>
+                           
 
 
                         </div>
