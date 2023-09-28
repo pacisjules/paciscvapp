@@ -4,13 +4,16 @@ import style from './App.module.css';
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect';
 import Image from "next/image";
-
+import {HiOutlineMail} from 'react-icons/hi';
 import { RiInstagramFill, RiWhatsappFill, RiLinkedinFill, RiGithubFill } from 'react-icons/ri'
 
 const Startup = () => {
 
   const [time, settime] = useState(1);
   const [op, setOp] = useState(0);
+
+  const [profile, setProfile] = useState('/images/cvImage.jpg');
+  const [profileActive, setProfileActive] = useState(true);
 
   const interval = setInterval(() => {
     settime(time + 1)
@@ -24,6 +27,16 @@ const Startup = () => {
     clearInterval(interval);
   }
 
+
+  const changeProfileAdd = ()=>{
+    setProfile('/images/cvImage2.jpeg');
+  }
+
+
+  const changeProfileRemove = ()=>{
+    setProfile('/images/cvImage.jpg');
+  }
+
   return (
     <div>
       <Head>
@@ -32,25 +45,42 @@ const Startup = () => {
       </Head>
       <div className={style.Maintainer}>
         <div className={style.M_left}>
-          <div className={style.profileImage}>
-            
+          <div className={style.profileImage} style={{
+            opacity: op
+          }}>
+
             <div className={style.proimg}>
-              
-              <Image 
-              src="/images/cvImage.jpg" 
-              alt="" 
-              width= {100}
-              height={100}
-              style={{ opacity: op }} 
+
+              <img
+                src={profile}
+                alt=""
+                width={100}
+                height={100}
+                style={{ opacity: op }}
+                onMouseMove={changeProfileAdd}
+                onMouseLeave={changeProfileRemove}
+                onMouseOut={changeProfileRemove}
               />
 
             </div>
 
           </div>
           <div className={style.profileEmail}>
-            <span style={{ color: "#214277" }}>Contact me through <br /> My email: <a href="mailto: pacisjules@gmail.com" style={{ color: "#00C797" }}>pacisjules@gmail.com</a></span>
+            <span style={{ opacity: op }}>Contact me through <br /></span>
+            <p style={{
+              opacity: op,
+              display:"flex",
+              alignItems:"center",
+              justifyContent:"center"
+            }}><HiOutlineMail style={{
+              fontSize:22,
+              marginRight:3,
+              color: "#00C797"
+            }}/><a href="mailto: pacisjules@gmail.com" style={{ color: "#00C797" }}>pacisjules@gmail.com</a></p>
           </div>
-          <div className={style.profileSocial}>
+          <div className={style.profileSocial} style={{
+            opacity: op
+          }}>
             <ul>
               <li><Link href={"https://www.instagram.com/shamigo250/"} target="_blank"><RiInstagramFill /></Link></li>
               <li><Link href={"https://wa.me/250788224590"} target="_blank"><RiWhatsappFill /></Link></li>

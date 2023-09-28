@@ -1,5 +1,3 @@
-
-
 .root {
   background-image: linear-gradient(125deg,
       hsl(213deg 21% 17%) 0%,
@@ -11,10 +9,6 @@
   height: 100vh;
   position: fixed;
 }
-
-
-
-
 
 .cvdown {
   background-color: white;
@@ -193,6 +187,8 @@
   justify-content: space-around;
   color: aliceblue;
   padding: 10px;
+
+
 }
 
 
@@ -422,15 +418,17 @@
 /* StartApp Styles */
 
 .Maintainer {
-  right: 0;
+  right: 1;
   top: 0;
   float: right;
   width: 90%;
   text-align: center;
   padding: 20px;
-  margin-top: 50px;
+  margin-right: 60px;
   display: flex;
   justify-content: space-around;
+  opacity: 0; /* Start with 0 opacity */
+  animation: slowLoad 1s ease-in-out 0.5s forwards;
 }
 
 .Maintainer .M_left {
@@ -442,7 +440,6 @@
 }
 
 .Maintainer .M_left .profileImage {
-  flex: 1;
   display: flex;
   justify-content: center;
 }
@@ -451,27 +448,39 @@
   width: 250px;
   height: 250px;
   z-index: 0;
+  border-radius: 50%;
+  background: rgb(19,11,147);
+  background: linear-gradient(108deg, rgba(19,11,147,1) 0%, rgba(9,9,121,1) 17%, rgba(0,138,255,1) 53%, rgba(0,146,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .Maintainer .M_left .profileImage .proimg img {
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   object-position: top;
-  border-radius: 30px;
-  filter: grayscale(1);
-  transition: ease-out 0.5s;
+  border-radius: 50%;
+  transition: ease-out 0.2s;
   z-index: 0;
 }
 
 .Maintainer .M_left .profileImage .proimg img:hover {
-  filter: grayscale(0);
-  border-radius: 50%;
+  filter: grayscale(1);
+  width: 235px;
+  height:235px;
+}
+
+
+
+.Maintainer .M_left .profileImage .proimg img:hover + .proimg {
+  background-color: #463200;
 }
 
 .Maintainer .M_left .profileEmail {
-  flex: 1;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -479,8 +488,7 @@
 }
 
 .Maintainer .M_left .profileSocial {
-  flex: 1;
-  margin-top: -30px;
+  margin-top: 20px;
 }
 
 .Maintainer .M_left .profileSocial ul {
@@ -548,7 +556,7 @@
   text-align: justify;
   font-weight: 600;
   width: 95%;
-  color: #214277;
+  /* color: #214277; */
 }
 
 
@@ -558,7 +566,7 @@
   font-family: 'Quicksand', sans-serif;
   justify-content: space-between;
   width: 95%;
-  color: #172C4D;
+  /* color: #172C4D; */
 }
 
 
@@ -575,7 +583,7 @@
 
 .Maintainer .M_right .My_infosDetails section p {
   font-weight: 500;
-  color: #214277;
+  /* color: #214277; */
 }
 
 
@@ -638,13 +646,11 @@
 }
 
 .light {
-  background-color: #172C4D;
   width: 40px;
   height: 40px;
-  color: white;
   position: absolute;
   right: 0;
-  border-radius: 5px;
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -654,8 +660,7 @@
 }
 
 .light:hover {
-  background-color: #1d3f77;
-  border-radius: 50px;
+  margin-top: 12px;
 }
 
 /* End of About Styles */
@@ -1428,4 +1433,27 @@
 
 
   /* End of About Styles */
+}
+
+
+
+
+/* Apply dark mode styles */
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+/* Define the slow load animation */
+@keyframes slowLoad {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

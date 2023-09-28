@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import Layout from '../components/Layout.js'
 import { useRouter } from "next/router";
 
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
@@ -11,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     return <Component {...pageProps} />;
   }else{
     return (
-  <Layout>
+  <Layout >
     <Component {...pageProps} />
   </Layout>
   )

@@ -9,5 +9,11 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+}
 
+
+
+.dark {
+  background-color: #000000;
+  color: #fff;
 }
