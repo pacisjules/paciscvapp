@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import classes from './App.module.css';
@@ -7,6 +7,21 @@ import Typewriter from 'typewriter-effect';
 const Home = () => {
   const router = useRouter();
   const [time, settime] = useState(11);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioUrl = '/mysound.mp3'; // Replace with the path to your audio file
+
+
+  
+
+  // const togglePlay = () => {
+  //   const audio = document.getElementById('audio');
+  //   if (isPlaying) {
+  //     audio.pause();
+  //   } else {
+  //     audio.play();
+  //   }
+  //   setIsPlaying(!isPlaying);
+  // };
 
 
   const interval = setInterval(() => {
@@ -22,9 +37,11 @@ const Home = () => {
   return (
     <div className={classes.root}>
       <Head>
-        <title>Welcome in Pacis Jules ISHIMWE CV</title>
+        <title>Welcome here, About Pacis Jules ISHIMWE CV</title>
         <meta name="keywords" content="web pro" />
       </Head>
+
+      <audio id="audio" src={audioUrl} muted autoPlay={true}></audio>
 
       <div className={classes.container}>
 
@@ -62,6 +79,10 @@ const Home = () => {
             <div className={classes.rect3}></div>
             <div className={classes.rect4}></div>
           </div>
+{/* 
+          <button onClick={togglePlay}>
+        {isPlaying ? 'Pause' : 'Play'}
+      </button> */}
 
           <br />
         </div>
