@@ -81,8 +81,6 @@ const myprojects = () => {
                                 <p>And more than....</p>
                             </section>
 
-                           
-
 
                         </div>
 
