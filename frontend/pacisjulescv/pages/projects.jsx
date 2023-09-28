@@ -87,7 +87,7 @@ const projects = () => {
 
           <div className={style.middle}>
           <div className={style.image}>
-            <Image width={100} height={100} src={photo} alt="alt" />
+            <img width={100} height={100} src={photo} alt="alt" />
           </div>
           <div className={style.infos}>
             <div className={style.description}>

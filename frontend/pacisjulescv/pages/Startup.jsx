@@ -66,7 +66,7 @@ const Startup = () => {
 
           </div>
           <div className={style.profileEmail}>
-            <span style={{ opacity: op }}>Contact me through <br /></span>
+            <span style={{ opacity: op }}>Please feel free to reach out to me via <br /></span>
             <p style={{
               opacity: op,
               display:"flex",
@@ -107,19 +107,14 @@ const Startup = () => {
               />
             </h1>
             <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder' }}>ISHIMWE</span> Jules Pacis <span style={{ fontSize: "25px" }}>👌</span></h2>
-            <p>I’m Software Developer, I have experience on different parts of the flow,
-              I have excellent
-              design & coding skills, as well as ability to convert client requirements into exciting
-              online applications.</p> <br />
+            <p>{"I am a Software Engineer with experience in various aspects of the development process. I possess exceptional design and coding skills, along with the ability to transform client requirements into captivating online applications."}</p> <br />
 
-            <p>To advance to the highest level of my career through hard work, determination, professional,
-              integrity and benefiting the community in general as well. Learning by doing to gain more knowledge and experience by using the skills, I have to contribute to the attainment of organizational
-              goals.</p><br />
+            <p>{"My goal is to elevate my career to its highest level through unwavering dedication, hard work, professional integrity, and a commitment to benefit the broader community. I believe in the principle of 'learning by doing' to continually expand my knowledge and expertise, leveraging my skills to contribute to the achievement of organizational objectives."}</p><br />
           </div>
           <div className={style.My_infosDetails}>
             <section style={{ flex: "1" }}>
               <h2>Home</h2>
-              <p>Kigali, Rwanda</p>
+              <p>Gasabo-Kigali, Rwanda</p>
             </section>
             <section style={{ flex: "1" }}>
               <h2>Schools</h2>
@@ -130,7 +125,7 @@ const Startup = () => {
             <section style={{ flex: "3" }}>
               <h2>Main Skills</h2>
               <p>Web Development, Desktop, UI UX Design, Full Stack,
-                RestApi, Mobile Development and Graphic design
+                RestApi, Databases, Mobile Development and Graphic design
               </p>
             </section>
           </div>
