@@ -1021,7 +1021,7 @@
   .container {
     width: 90%;
     height: 85%;
-    margin-top: -15px;
+    margin-top: -10px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
