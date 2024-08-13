@@ -13,6 +13,7 @@ const Startup = () => {
   const [op, setOp] = useState(0);
 
   const [profile, setProfile] = useState('/images/cvImage.jpg');
+  const [ico, setIco] = useState('/images/rocket.png');
   const [profileActive, setProfileActive] = useState(true);
 
   const interval = setInterval(() => {
@@ -106,10 +107,25 @@ const Startup = () => {
                 }}
               />
             </h1>
-            <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder' }}>ISHIMWE</span> Jules Pacis <span style={{ fontSize: "5px" }}>👌</span></h2>
-            <p>{"I am a Software Engineer with experience in various aspects of the development process. I possess exceptional design and coding skills, along with the ability to transform client requirements into captivating online applications."}</p> <br />
+            <div style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+              gap: '20px'
+            }}> <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder' }}>ISHIMWE</span> Jules Pacis </h2><img
+                src={ico}
+                alt=""
+                width={25}
+                height={25}
+                style={{ opacity: op}}
+                onMouseMove={changeProfileAdd}
+                onMouseLeave={changeProfileRemove}
+                onMouseOut={changeProfileRemove}
+              /></div>
+           
+            <p>{"I am a Software Engineer with extensive experience in various aspects of the development process. I possess strong design and coding skills, with a proven ability to transform client requirements into engaging online applications, mobile apps and AI."}</p> <br />
 
-            <p>{"My goal is to elevate my career to its highest level through unwavering dedication, hard work, professional integrity, and a commitment to benefit the broader community. I believe in the principle of 'learning by doing' to continually expand my knowledge and expertise, leveraging my skills to contribute to the achievement of organizational objectives."}</p><br />
+            <p>{"My goal is to advance my career to its highest potential through dedication, hard work, and professional integrity, all while contributing to the broader community. I am committed to the principle of 'learning by doing,' continually expanding my knowledge and expertise to drive organizational success."}</p><br />
           </div>
           <div className={style.My_infosDetails}>
             <section style={{ flex: "1" }}>
@@ -119,7 +135,7 @@ const Startup = () => {
             <section style={{ flex: "1" }}>
               <h2>Schools</h2>
               <p>Computer Science</p>
-              <p>ULK (University)</p>
+              <p>UoK (University)</p>
             </section>
 
             <section style={{ flex: "3" }}>

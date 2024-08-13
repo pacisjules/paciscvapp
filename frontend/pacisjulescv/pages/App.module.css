@@ -15,12 +15,13 @@
   height: 40px;
   color: black;
   position: absolute;
-  right: 0;
+  left: 0;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px;
+  margin-left: 80px;
   cursor: pointer;
   bottom: 0;
   transition: 0.3s ease-in-out;
@@ -30,6 +31,7 @@
   justify-content: space-between;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
+  z-index: 999;
 }
 
 .cvdown:hover {
@@ -289,7 +291,7 @@
 .rect1 {
   margin-left: 5px;
   width: 55px;
-  height: 10px;
+  height: 5px;
   background: rgb(12, 22, 31);
   background: linear-gradient(90deg, rgba(12, 22, 31, 1) 0%, rgba(0, 255, 56, 1) 100%);
   border-radius: 10px;
@@ -321,7 +323,7 @@
 .rect2 {
   margin-left: 5px;
   width: 30px;
-  height: 10px;
+  height: 5px;
   background-color: #00F0FF;
   border-radius: 10px;
 
@@ -352,7 +354,7 @@
 .rect3 {
   margin-left: 5px;
   width: 20px;
-  height: 10px;
+  height: 5px;
   background-color: #0085FF;
   border-radius: 10px;
 
@@ -382,7 +384,7 @@
 .rect4 {
   margin-left: 5px;
   width: 10px;
-  height: 10px;
+  height: 5px;
   background-color: rgb(255, 0, 81);
   border-radius: 10px;
 
@@ -1197,8 +1199,9 @@
 
 
   .cvdown {
-    background-color: #00c35e;
-    height: 30px;
+    background-color: #00c35ede;
+    height: 50px;
+    width: 250px;
     color: white;
     position: fixed;
     right: 0;
@@ -1207,15 +1210,17 @@
     justify-content: center;
     align-items: center;
     margin: 15px;
+    margin-bottom:25px;
     cursor: pointer;
     bottom: 0;
     transition: 0.3s ease-in-out;
-    border: #00a550 2px solid;
+    border: #00a550e9 2px solid;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;
+    z-index: 999;
   }
 
   .cvdown p {

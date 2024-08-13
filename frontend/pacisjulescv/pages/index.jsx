@@ -67,9 +67,9 @@ const Home = () => {
             />
           </h2>
 
-          <p style={{ fontSize: "0.8em" }}>Nice meeting you, but I can’t stop thinking about you. Hope to meet you very soon.</p>
+          <p style={{ fontSize: "0.8em", textAlign: "center" }}>It was great meeting you, and I can't stop thinking about you. I hope we can meet again very soon.</p>
           <br />
-          <p style={{ fontSize: "0.8em" }}>Thank you for visit me continue to enjoy my CV. &#128588;</p>
+          <p style={{ fontSize: "0.8em" }}>Thank you for visiting me. Please feel free to continue reviewing my CV. &#128588;</p>
 
 
           <br />

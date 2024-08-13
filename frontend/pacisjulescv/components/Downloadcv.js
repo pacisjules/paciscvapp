@@ -10,7 +10,7 @@ const Downloadcv = () => {
     return (
         <>
     <a href="./Resume-IshimweJulesPacis.pdf" ><div className={style.cvdown}>
-        <p>Get my Resume here </p>
+        <p style={{textTransform:"uppercase", fontWeight:"bold"}}>Get my Resume here </p>
         <BsFileEarmarkArrowDownFill style={{
             fontSize:"23px",
             marginLeft:"10px"

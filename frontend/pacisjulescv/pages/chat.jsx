@@ -28,6 +28,7 @@ const chat = () => {
       <Head>
         <title>(CV) Message me</title>
         <meta name='keywords' content='web pro' />
+        
       </Head>
       <div className={style.Maintainer} style={{ width: '90%', marginTop: "-10px" }}>
 
@@ -47,11 +48,16 @@ const chat = () => {
                 }}
               />
             </h1>
-            <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder' }}>Any project</span> Tell me i can work <span style={{ fontSize: "25px" }}>😊</span></h2>
-            <p>If you want me contact me through my email: <span style={{ fontWeight: 'bolder', color: "#22c55e" }}><a href="mailto: pacisjules@gmail.com">pacisjules@gmail.com</a> </span><br /></p>
+            <h2 style={{ opacity: op }}><span style={{ fontWeight: 'bolder' }}>I'm ready</span> {"To take on any project you have for me."}<span style={{ fontSize: "25px" }}>😊</span></h2>
+            <p>If you want me contact me through my email: <span style={{ fontWeight: 'bolder', color: "#22c55e" }}><a href="mailto: pacisjules@gmail.com">pacisjules@gmail.com</a> </span><br />
+            Or that small chat on the right down side on page then we can start chat.
+            </p>
 
-            <div className={style.chattapp}>
-              <div className={style.msgside}>
+            {/* <div className={style.chattapp}> */}
+
+
+              
+              {/* <div className={style.msgside}>
 
                 <div className={style.rec}>
                   
@@ -135,8 +141,8 @@ const chat = () => {
                     <RiSendPlane2Fill />
                   </button>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
 
           </div>
         </div>

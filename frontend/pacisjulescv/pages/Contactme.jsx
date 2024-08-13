@@ -3,8 +3,10 @@ import Head from "next/head";
 import style from './App.module.css';
 import Typewriter from 'typewriter-effect';
 import axios from 'axios';
+import { useRouter } from 'next/router'
 
 const Contactme = () => {
+  const router = useRouter();
   const [time, settime] = useState(1);
   const [op, setOp] = useState(0);
 
@@ -50,10 +52,10 @@ const Contactme = () => {
             <h2 style={{ opacity: op, fontSize: '20px' }}><span style={{ fontWeight: 'bolder' }}>Visit my social media accounts</span> by following me and share them for support me <span style={{ fontSize: "25px" }}>😊</span></h2>
             <br />
             <div className={style.socials}>
-                <button>Go with Instagram feed</button>
-                <button>Go with facebook</button>
-                <button>Go with Twitter</button>
-                <button>Go with Linkedin </button>
+                <button onClick={() => router.push('https://www.instagram.com/shamigo250/')}>Go with Instagram feed</button>
+                {/* <button onClick={() => router.push('/myinstagram')}>Go with facebook</button> */}
+                <button onClick={() => router.push('https://x.com/JulesPacis')}>Go with Twitter</button>
+                <button onClick={() => router.push('https://www.linkedin.com/in/pacis-jules-ishimwe-b54578117/')}>Go with Linkedin </button>
             </div>
 
             <div className={style.export}>
